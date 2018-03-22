@@ -23,12 +23,12 @@ f1.put("Date", new Date(con.getDate()).toString());
 f1.put("LastModified", new Date(con.getLastModified()).toString());
 f1.put("key1_field", con.getHeaderField(con.getHeaderFieldKey(1)));
 for(String k : f1.keySet()){
-  System.out.printf("%s: %s%n", k, f2.get(k));
+  System.out.printf("%s: %s%n", k, f1.get(k));
 }
 
 Map<String, List<String>> f2 = con.getHeaderFields();
 for(String k : f2.keySet()){
-  System.out.printf("%nkey:%s", k, f2.get(k));
+  System.out.printf("%nkey:%s field%s",  k, f2.get(k));
 }
 System.out.printf("%n%ncontent:%s",
 	con.getContent().toString());
