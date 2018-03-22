@@ -1,3 +1,7 @@
+//public String getProperty(String key
+//  [, String defaultValue])
+//public void load(Reader reader | InputStream inStream)
+
 try(
   InputStream inputStream =
 	  new FileInputStream(new File("db.properties"))){
