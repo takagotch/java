@@ -1,3 +1,7 @@
+//public String getHostName()
+//public String getCanonicalHostName()
+
+
 InetAddress host = InetAddress.getByName("localhost");
 System.out.printlnt("Host name = " + host.getHostName());
 

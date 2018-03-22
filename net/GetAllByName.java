@@ -1,3 +1,6 @@
+//public static InetAddress getByName(String host)
+//public static InetAddress[] getAllByName(String host)
+
 try{
   System.out.println(InetAddress.getByName("www.google.co.jp"));
   for(InetAddress n :
