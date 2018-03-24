@@ -1,19 +1,17 @@
-//public E previous()
+//ListIterator<E> listIterator([int index]) 
 
 List<Integer> list = new ArrayList<>();
 Random random = new Random();
-for(int i = 0; i < 2; i++){
+for(int i = 0; i < 5; i++){
   list.add(random.nextInt(5));
 }
-System.out.println(list);
+Chap4Tool.dispCollection(list, "ListIterator");
 
-ListIterator<Integer> iterator = list.listIterator(list.size());
+ListIterator<Integer> iterator = list.listIterator();
 
-for(int i = 0; i < list.size() + 1; i++){
-  try{
-    System.out.println(iterator.previous());
-  } catch(Exception e){
-    e.printStackTrace();
-  }
+ListIterator<> iterator = list.listIterator();
+while(iterator.hasNext()){
+  System.out.print("[" + iterator.nextIndex()+ "]" +
+    iterator.next() + " ");
 }
 
