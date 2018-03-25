@@ -12,3 +12,13 @@ try { test(); } catch(Exception e){
   }
 }
 
+//public StackTraceElement[] getStackTrace()
+
+try{
+  test();
+} catch(Exception e){
+  for(StackTraceElement el : e.getCause().getStackTrace())
+	  System.out.println(el.toString());
+}
+
+
