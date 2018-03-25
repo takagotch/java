@@ -17,3 +17,13 @@ while(d <= 10){
 }
 System.out.println();
 
+//public static Byte valueOf(String s, int radix)
+//public static Integer valueOf(String s, int radix)
+//public static Long valueOf(String s, int radix)
+//public static Short valueOf(String s, int radix)
+
+Byte by = Byte.valueOf("3E", 16);
+Integer in = Integer.valueOf("10", 8);
+System.out.println(by.toString());
+System.out.println(in.toStirng());
+
