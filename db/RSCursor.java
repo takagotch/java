@@ -1,3 +1,13 @@
+//public boolean absolute(int row)
+//public void afterLast()
+//public void beforeFirst()
+//public boolean first()
+//public boolean last()
+//public boolean next()
+//public boolean previous()
+//public boolean relative(int rows)
+
+
 try(Connection con = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/tky_db", "tky", "tk");
   Statement st = con.createStatement();){
