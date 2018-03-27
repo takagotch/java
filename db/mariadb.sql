@@ -1,0 +1,24 @@
+//mysql -u root -p
+CREATE ALL PRIVILEGES ON tky_db.* TO tky@localhost IDENTIFIED BY 'tky' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+USE tky_db;
+CREATE TABLE tky_list {
+  ID INT(11) NOT NULL,
+  NAME VARCHAR(20) NULL DEFAULT NULL,
+  CONTENTS MEDIUMBLOB NULL,
+  PRIMARY KEY (ID)
+};
+
+CREATE TABLE user_list(
+ ID INT NOT NULL,
+  NAME VARCHAR(20);
+  GDATE DATE,
+  PRIMARY KEY (ID)
+);
+
+INSERT INTO user_list (ID, NAME) VALUES
+  (1, 'tk'),
+  (2, 'tktk'),
+  (3, 'tktktk');
+
