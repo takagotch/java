@@ -1,4 +1,4 @@
-//
+//public void setXxx(int index, type x)
 
 try(Connection con = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/tky_db", "tky", "tiger");
