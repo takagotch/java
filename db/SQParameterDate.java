@@ -1,6 +1,7 @@
-//public void setDate()
-//public void setTime()
-//public void setTimestamp()
+//public void setDate(int index, Date x[, Calendar cal])
+//public void setTime(int index, Time x[, Calendar cal])
+//public void setTimestamp(int index, Timestamp x
+//  [, Calendar cal])
 
 try(Connction con = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/tky_db", "tky", "tk");
