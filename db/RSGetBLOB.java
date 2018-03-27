@@ -1,4 +1,6 @@
-//
+//public type getXxx(int columnIndex | String columnLabel)
+
+
 
 try(Connection con = DriverManager.getConnection(
     "jdbc:mysql://localhost:3306/tky_db", "tky", "tk");
